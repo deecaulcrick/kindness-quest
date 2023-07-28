@@ -199,5 +199,9 @@ select {
         margin-bottom: 20px;
     }
 
+    .marquee {
+        font-size: 14px;
+    }
+
 
 }
