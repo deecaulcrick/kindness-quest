@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+.app{
+    min-height: 100vh;
+    background-color: #FDF2EC;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header img{
+    width: 40px;
+    cursor: pointer;
+}
+.toggle{
+    width: 50px;
+    height: 50px;
+    background-color: #FED834;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 0px 0px #000;
+    
+}
+
+.hero{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroText{
+    width: 80%;
+    font-size: 70px;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.styledText{
+    font-size: 60px;
+    line-height: 1em;
+    background-color: #E2CCFB;
+    color: #000;
+    border-radius: 100px;
+    padding: 5px 50px;
+    border: 1.5px solid black;
+    box-shadow: 6px 6px 0px 0px #000;
+}
+
+.demo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+select{
+    width: 80%;
+    height: 50px;
+    outline: none;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 0px 15px;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+.button{
+    width: 80%;
+    height: 50px;
+    background-color: #FED834;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 6px 6px 0px 0px #000;
+    
+}
+.results{
+    background-color: #F9F3FF;
+    margin-top: 50px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.result-card{
+    background-color: #FFFFFF;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.result-card h3{
+    font-size: 16px;
+    color: #8E53E8;
+    text-transform: uppercase;
+}
+.result-card p{
+    font-size: 40px;
+    line-height: 0.9em;
+    margin-top: 10px;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header{
+        padding: 20px 10px;
+    }
+    .hero{
+        padding: 20px 20px;
+    }
+    .heroText{
+        width: 100%;
+        font-size: 50px;
+        line-height: 0.9em;
+    }
+    .styledText{
+        font-size: 30px;
+        line-height: 0.9em;
+    }
+    .demo{
+        padding: 20px;
+    }
+    form{
+        width: 100%;
+    }
+    select{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        
+    }
+    .results{
+        width: 90%;
+    }
+    .result-card{
+        padding: 40px 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+  }
