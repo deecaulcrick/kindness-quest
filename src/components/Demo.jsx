@@ -4,13 +4,14 @@ import strangerActs from '../data/strangerActs'
 import familyFriendsActs from '../data/familyFriendsActs'
 import selfcareActs from '../data/selfcareActs'
 import { useTheme } from '../context/ThemeContext';
-
 import clipboardCopy from 'clipboard-copy'
 
 function Demo() {
 
+  //use darkMode
   const { darkMode } = useTheme();
 
+  //handle copy to clipboard
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
@@ -25,6 +26,7 @@ function Demo() {
       })
   }
 
+  //main app logic starts here 
   const categories = ['Self Care', 'Strangers', 'Family and Friends', 'Community']
   const [selectedCategory, setSelectedCategory] = useState(categories[0])
   const [randomAct, setRandomAct] = useState('')
