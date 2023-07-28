@@ -1,5 +1,5 @@
 import Header from './components/Header'
-import Hero from './components/HEro'
+import Hero from './components/Hero'
 import Marquee from "react-fast-marquee";
 
 import Demo from './components/Demo'
