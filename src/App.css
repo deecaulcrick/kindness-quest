@@ -16,6 +16,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .header img {
@@ -55,12 +57,22 @@
 .styledText {
     font-size: 60px;
     line-height: 1em;
+    margin-top: 10px;
     background-color: #E2CCFB;
     color: #000;
-    border-radius: 100px;
-    padding: 5px 50px;
+    border-radius: 10px;
+    padding: 5px 30px;
     border: 1.5px solid black;
     box-shadow: 6px 6px 0px 0px #000;
+    transform: rotate(-3deg);
+}
+
+.marquee {
+    padding: 5px 0px;
+    font-size: 20px;
+    top: 0;
+    background-color: #222;
+    color: #FDF2EC;
 }
 
 .demo {
@@ -152,19 +164,19 @@ select {
     .heroText {
         width: 100%;
         font-size: 50px;
-        line-height: 0.9em;
+        line-height: 0.8em;
     }
 
     .styledText {
-        font-size: 30px;
-        line-height: 0.9em;
+        font-size: 50px;
+        line-height: 0.8em;
     }
 
     .demo {
         padding: 20px;
     }
 
-    form {
+    .form {
         width: 100%;
     }
 

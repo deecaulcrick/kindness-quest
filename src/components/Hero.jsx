@@ -9,8 +9,10 @@ function Hero() {
 
   return (
     <div className="hero">
-      <h1 className='heroText'>Spread kindness effortlessly and make the world brighter with <span className='styledText'
-      >KindnessQuest</span></h1>
+      <h1 className='heroText'>Spread kindness effortlessly and make the world brighter with</h1>
+      <h2 className='styledText'
+      >KindnessQuest</h2>
+
 
     </div>
   )

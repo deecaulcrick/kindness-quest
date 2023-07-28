@@ -14,7 +14,7 @@ function Demo() {
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
-    clipboardCopy(randomAct)
+    clipboardCopy(`My random act of kindness today is to: ${randomAct}`)
       .then(() => {
         setCopied(true);
         setTimeout(() => setCopied(false), 3000);
