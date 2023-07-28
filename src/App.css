@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Darker Grotesque', sans-serif;
 }
-.app{
+
+.app {
     min-height: 100vh;
     background-color: #FDF2EC;
 }
 
-.header{
+.header {
     font-size: 18px;
     font-weight: 500;
     display: flex;
@@ -16,11 +17,13 @@
     align-items: center;
     padding: 20px;
 }
-.header img{
+
+.header img {
     width: 40px;
     cursor: pointer;
 }
-.toggle{
+
+.toggle {
     width: 50px;
     height: 50px;
     background-color: #FED834;
@@ -30,17 +33,18 @@
     font-size: 20px;
     cursor: pointer;
     box-shadow: 6px 6px 0px 0px #000;
-    
+
 }
 
-.hero{
+.hero {
     padding: 40px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.heroText{
+
+.heroText {
     width: 80%;
     font-size: 70px;
     line-height: 1em;
@@ -48,7 +52,7 @@
     font-weight: 500;
 }
 
-.styledText{
+.styledText {
     font-size: 60px;
     line-height: 1em;
     background-color: #E2CCFB;
@@ -59,41 +63,47 @@
     box-shadow: 6px 6px 0px 0px #000;
 }
 
-.demo{
+.demo {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
 }
-select{
+
+select {
     width: 80%;
     height: 50px;
     outline: none;
     border: 1.5px solid black;
+    color: black;
     border-radius: 10px;
     padding: 0px 15px;
     font-size: 20px;
     margin-bottom: -10px;
 }
-.button{
+
+.button {
     width: 80%;
     height: 50px;
     background-color: #FED834;
+    color: black;
     border: 1.5px solid black;
     border-radius: 10px;
     font-weight: 600;
     font-size: 20px;
     cursor: pointer;
     box-shadow: 6px 6px 0px 0px #000;
-    
+
 }
-.results{
+
+.results {
     background-color: #F9F3FF;
     margin-top: 50px;
     border: 1.5px solid black;
@@ -105,7 +115,8 @@ select{
     align-items: center;
     width: 50%;
 }
-.result-card{
+
+.result-card {
     background-color: #FFFFFF;
     border: 1.5px solid black;
     border-radius: 10px;
@@ -113,12 +124,14 @@ select{
     text-align: center;
     margin-bottom: 20px;
 }
-.result-card h3{
+
+.result-card h3 {
     font-size: 16px;
     color: #8E53E8;
     text-transform: uppercase;
 }
-.result-card p{
+
+.result-card p {
     font-size: 40px;
     line-height: 0.9em;
     margin-top: 10px;
@@ -126,43 +139,53 @@ select{
 }
 
 @media only screen and (max-width: 768px) {
+
     /* For mobile phones: */
-    .header{
+    .header {
         padding: 20px 10px;
     }
-    .hero{
+
+    .hero {
         padding: 20px 20px;
     }
-    .heroText{
+
+    .heroText {
         width: 100%;
         font-size: 50px;
         line-height: 0.9em;
     }
-    .styledText{
+
+    .styledText {
         font-size: 30px;
         line-height: 0.9em;
     }
-    .demo{
+
+    .demo {
         padding: 20px;
     }
-    form{
+
+    form {
         width: 100%;
     }
-    select{
+
+    select {
         width: 100%;
     }
-    .button{
+
+    .button {
         width: 100%;
-        
+
     }
-    .results{
+
+    .results {
         width: 90%;
     }
-    .result-card{
+
+    .result-card {
         padding: 40px 20px;
         text-align: center;
         margin-bottom: 20px;
     }
-    
-    
-  }
+
+
+}

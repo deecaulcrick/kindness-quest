@@ -72,9 +72,7 @@ function Demo() {
 
         </select> <br />
         <button className='button' onClick={handleClick}
-          style={{
-            boxShadow: darkMode ? '6px 6px 0px 0px #fff' : '6px 6px 0px 0px #000',
-          }}>Start your kindness quest</button>
+        >Start your kindness quest</button>
       </div>
       {randomAct && (
         <div className="results">
