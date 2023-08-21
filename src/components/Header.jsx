@@ -1,5 +1,5 @@
 import Sun from '../assets/sun.svg'
-import Moon from '../assets/Moon.svg'
+import Moon from '../assets/moon.svg'
 import { useTheme } from '../context/ThemeContext';
 
 function Header() {
