@@ -3,11 +3,12 @@ import communityActs from '../data/communityActs'
 import strangerActs from '../data/strangerActs'
 import familyFriendsActs from '../data/familyFriendsActs'
 import selfcareActs from '../data/selfcareActs'
-import { useTheme } from '../context/ThemeContext';
+
 import clipboardCopy from 'clipboard-copy'
 
-function Demo() {
+import { useTheme } from '../context/ThemeContext';
 
+function Demo() {
   //use darkMode
   const { darkMode } = useTheme();
 
@@ -67,7 +68,11 @@ function Demo() {
   return (
     <div className="demo">
       <div className='form'>
-        <select id="categories" name="categories" value={selectedCategory} onChange={handleCategoryChange}>
+        <select id="categories" name="categories" value={selectedCategory} onChange={handleCategoryChange}
+          style={{
+            backgroundColor: darkMode ? '#fff' : 'var(--dark-blue)',
+            color: darkMode ? '#000' : '#fff',
+          }}>
           {categories.map((category) => (
             <option key={category} value={category}>{category}</option>
           ))}
@@ -77,19 +82,27 @@ function Demo() {
         >Start your kindness quest</button>
       </div>
       {randomAct && (
-        <div className="results">
-          <div className="result-card">
-            <h3>Your random act of kindness is:</h3>
-            <p>{randomAct}</p>
-          </div>
-          <button className='button'
+
+        <div className="result-card"
+          style={{
+            backgroundColor: darkMode ? '#fff' : 'var(--dark-blue)',
+          }}>
+          <h3>Your random act of kindness is:</h3>
+          <p
+            style={{
+              color: darkMode ? '#000' : '#fff',
+            }}>{randomAct}</p>
+          <button className='copy'
             onClick={handleCopyClick}>
             {copied ? 'Copied!' : 'Copy to clipboard'}
           </button>
-        </div>
-      )}
 
-    </div>
+
+        </div>
+      )
+      }
+
+    </div >
   )
 }
 

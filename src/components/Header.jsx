@@ -1,16 +1,14 @@
-import React from 'react'
-import lightMode from '../assets/lightMode.svg'
-import darkmode from '../assets/darkMode.svg'
+import Sun from '../assets/sun.svg'
+import Moon from '../assets/Moon.svg'
 import { useTheme } from '../context/ThemeContext';
 
 function Header() {
   const { darkMode, toggleDarkMode } = useTheme();
   return (
     <div className="header">
-      <h3 className='logo'>KINDNESSQUEST</h3>
+      <h4 className='logo'>Kindness<i>Quest</i></h4>
       <img onClick={toggleDarkMode}
-        src={darkMode ? darkmode : lightMode} />
-
+        src={darkMode ? Sun : Moon} />
     </div>
   )
 }

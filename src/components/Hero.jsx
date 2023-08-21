@@ -1,19 +1,11 @@
-import React from 'react'
-import yellowStar from '../assets/yellow-star.svg'
-import orangeStar from '../assets/orange-star.svg'
-import { useTheme } from '../context/ThemeContext';
 
 function Hero() {
 
-  const { darkMode } = useTheme();
 
   return (
     <div className="hero">
-      <h1 className='heroText'>Spread kindness effortlessly and make the world brighter with</h1>
-      <h2 className='styledText'
-      >KindnessQuest</h2>
-
-
+      <h1 className='heroText'>What is your act of <br />kindness today?</h1>
+      <p>Select from various categories, receive daily kindness suggestions with a click, spread joy, and share the experience with others.</p>
     </div>
   )
 }
